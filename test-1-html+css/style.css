@@ -1,0 +1,258 @@
+html,
+body,
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 1322px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inner-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/WorldMap.png');
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container {
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.44px;
+}
+
+.sub-title {
+    color: #404040;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.198px;
+    margin-top: 24px;
+}
+
+.countries-container {
+    height: 440px;
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 116px;
+}
+
+.countries-item {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(44, 59, 64, 0.15);
+    margin: 0 24px 24px 0;
+}
+
+.big {
+    width: 528px;
+    max-width: 528px;
+    height: 208px;
+    max-height: 208px;
+}
+
+.small {
+    width: 344px;
+    max-width: 344px;
+    height: 208px;
+    max-height: 208px;
+    margin-bottom: 0;
+}
+.countries-item:nth-child(2) {
+    margin-right: 0;
+}
+
+.countries-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.countries-item-inner {
+    padding: 24px;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+}
+
+.countries-item__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countries-item__top-name {
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.588px;
+}
+
+.countries-item__mid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.countries-item__mid-phone,
+.countries-item__mid-email {
+    color: #0a0a0a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.198px;
+    text-align: left;
+}
+
+.countries-item__bot {
+    margin-top: 12px;
+}
+
+.countries-item__bot-address {
+    color: #9e9e9e;
+    font-size: 18px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.198px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 390px;
+        height: 1346px;
+    }
+
+    .inner-container {
+        background-image: url('./images/WorldMapSmall.png');
+        background-position: 50% 15%;
+    }
+
+    .title-container {
+        margin-top: 48px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.588px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.176px;
+    }
+
+    .countries-container {
+        height: 896px;
+        width: 310px;
+        margin-bottom: 48px;
+    }
+
+    .countries-item {
+        margin: 0 0 16px;
+    }
+
+    .big {
+        width: 310px;
+        max-width: 310px;
+        height: 172px;
+        max-height: 172px;
+    }
+
+    .small {
+        width: 310px;
+        max-width: 310px;
+        height: 172px;
+        max-height: 172px;
+    }
+
+    .countries-item-inner {
+        padding: 16px;
+        width: calc(100% - 32px);
+        height: calc(100% - 32px);
+    }
+
+    .countries-item__top-name {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.34px;
+    }
+
+    .countries-item__top-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    .countries-item__mid {
+        margin-top: 8px;
+    }
+
+    .countries-item__mid-phone,
+    .countries-item__mid-email {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.176px;
+    }
+
+    .countries-item__bot {
+        margin-top: 8px;
+    }
+
+    .countries-item__bot-address {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.176px;
+    }
+}
